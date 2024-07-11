@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "icon-inbox",
+    "name": "Inbox",
+    "count": 1253,
+    "isActive": true
+  },
+  {
+    "icon": "icon-star",
+    "name": "Starred",
+    "count": 245,
+    "isActive": false
+  },
+  {
+    "icon": "icon-sent",
+    "name": "Sent",
+    "count": 24532,
+    "isActive": false
+  },
+  {
+    "icon": "icon-draft",
+    "name": "Draft",
+    "count": 9,
+    "isActive": false
+  },
+  {
+    "icon": "icon-spam",
+    "name": "Spam",
+    "count": 14,
+    "isActive": false
+  },
+  {
+    "icon": "icon-important",
+    "name": "Important",
+    "count": 18,
+    "isActive": false
+  },
+  {
+    "icon": "icon-bin",
+    "name": "Bin",
+    "count": 9,
+    "isActive": false
+  }
+]

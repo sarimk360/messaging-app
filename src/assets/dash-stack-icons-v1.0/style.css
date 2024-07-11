@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'dash-stack-icons';
+  src:  url('fonts/dash-stack-icons.eot?n24u8x');
+  src:  url('fonts/dash-stack-icons.eot?n24u8x#iefix') format('embedded-opentype'),
+    url('fonts/dash-stack-icons.ttf?n24u8x') format('truetype'),
+    url('fonts/dash-stack-icons.woff?n24u8x') format('woff'),
+    url('fonts/dash-stack-icons.svg?n24u8x#dash-stack-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dash-stack-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-archive:before {
+  content: "\e900";
+}
+.icon-bin:before {
+  content: "\e901";
+}
+.icon-delete:before {
+  content: "\e902";
+}
+.icon-draft-pencil:before {
+  content: "\e903";
+}
+.icon-email-action-unread:before {
+  content: "\e904";
+}
+.icon-important:before {
+  content: "\e905";
+}
+.icon-information:before {
+  content: "\e906";
+}
+.icon-search:before {
+  content: "\e907";
+}
+.icon-send-email:before {
+  content: "\e908";
+}
+.icon-spam-icon:before {
+  content: "\e909";
+}
+.icon-star:before {
+  content: "\e90a";
+}
+.icon-star-clicked:before {
+  content: "\e90b";
+}

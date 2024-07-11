@@ -1,0 +1,164 @@
+[
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Jullu Jalal ",
+    "desc": {
+      "label": "Primary",
+      "text": "Our Bachelor of Commerce program is ACBSP-accredited."
+    },
+    "time": "8:38 AM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Peter Lewis",
+    "desc": {
+      "label": "Friends",
+      "text": "Vacation Home Rental Success"
+    },
+    "time": "7:52 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Anthony Briggs",
+    "desc": {
+      "label": "",
+      "text": "Free Classifieds Using Them To Promote Your Stuff Online"
+    },
+    "time": "7:52 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Clifford Morgan",
+    "desc": {
+      "label": "Social",
+      "text": "Enhance Your Brand Potential With Giant Advertising Blimps"
+    },
+    "time": "4:13 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Cecilia Webster",
+    "desc": {
+      "label": "Friends",
+      "text": "Always Look On The Bright Side Of Life"
+    },
+    "time": "3:52 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Harvey Manning",
+    "desc": {
+      "label": "",
+      "text": "Curling Irons Are As Individual As The Women Who Use Them"
+    },
+    "time": "2:30 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Willie Blake",
+    "desc": {
+      "label": "Primary",
+      "text": "Our Bachelor of Commerce program is ACBSP-accredited."
+    },
+    "time": "8:38 AM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Fanny Weaver",
+    "desc": {
+      "label": "",
+      "text": "Free Classifieds Using Them To Promote Your Stuff Online"
+    },
+    "time": "7:52 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Olga Hogan",
+    "desc": {
+      "label": "Social",
+      "text": "Enhance Your Brand Potential With Giant Advertising Blimps"
+    },
+    "time": "4:13 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Lora Houston",
+    "desc": {
+      "label": "Friends",
+      "text": "Vacation Home Rental Success"
+    },
+    "time": "7:52 PM",
+    "delete": false,
+    "isArchived": false
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Lora Houston",
+    "desc": {
+      "label": "Friends",
+      "text": "Vacation Home Rental Success"
+    },
+    "time": "7:52 PM",
+    "delete": false,
+    "isArchived": false,
+    "messages":[{
+      "type":"sender",
+      "id":0,
+      "time":"2:30 PM",
+      "textMessage":"string"
+    }]
+  }
+]

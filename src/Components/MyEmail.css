@@ -1,0 +1,75 @@
+.myEmail-heading {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.email-menu {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.email-menu .left-cont {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.email-menu-icon,
+.menu-item,
+.item-count {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+
+.item-count {
+  color: #202224;
+  opacity: 60%;
+}
+
+.icon-inbox {
+  background: url(../assets/email-action-unread.svg) no-repeat;
+  width: 17px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-star {
+  background: url(../assets/star.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-sent {
+  background: url(../assets/send-email.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-draft {
+  background: url(../assets/draft-pencil.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-spam {
+  background: url(../assets/spam-icon.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-important {
+  background: url(../assets/important.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.icon-bin {
+  background: url(../assets/bin.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}

@@ -1,0 +1,22 @@
+/* src/App.css */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+/* Global styles */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.inbox {
+  font-weight: bold;
+  width: 82px;
+  height: 44px;
+  font-size: 32px;
+}
+.main-container {
+  display: flex;
+  gap: 24px;
+  /* margin-bottom: 50px; */
+}

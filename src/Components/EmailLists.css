@@ -1,0 +1,187 @@
+.dashboard-right-container {
+  border-radius: 15px;
+  border: 0.3px solid #b9b9b9;
+  width: calc(100vw - 415px);
+  overflow: hidden;
+}
+.search-mail-container {
+  height: 40px;
+  display: flex;
+  border: 0.6px solid #d5d5d5;
+  background: #f5f6fa;
+  border-radius: 50px;
+}
+.search--icon-div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 13px;
+  border-radius: 50px 0px 0px 50px;
+}
+.icon-search {
+  background: url(../assets/search.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+  opacity: 0.5px;
+}
+.search-input {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 600;
+  width: 332px;
+  outline: none;
+  border: none;
+  background: #f5f6fa;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.search-rightMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 24px;
+}
+.search-rightMenu .rightMenu {
+  display: flex;
+  border: 0.6px solid #d5d5d5;
+  border-radius: 10px;
+}
+.icon-archive {
+  background: url(../assets/archive.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.icon-information {
+  background: url(../assets/information.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.icon-delete {
+  background: url(../assets/delete.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.search-rightMenu .rightMenu .item {
+  padding: 12px 14px;
+  border-right: 0.4px solid #979797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-rightMenu .rightMenu .item:last-child {
+  border-right: 0;
+}
+
+.email-container {
+  font-size: 14px;
+  border-radius: 0px 10px 10px 0px;
+  box-sizing: border-box;
+}
+.email-container .icon-star-container {
+  width: 47px;
+}
+.icon-star-container .icon-star {
+  background: url(../assets/star.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+}
+.icon-star-container .icon-star-clicked {
+  background: url(../assets/star-clicked.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+}
+.check-box {
+  width: 43px;
+}
+table {
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b9b9b9;
+  height: 66px;
+}
+.label-text-container {
+  display: flex;
+  align-items: center;
+}
+table .name {
+  max-width: 150px;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.label-text-container .label {
+  width: 60px;
+  padding: 3px 0px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.label-text-container .Primary {
+  background: rgb(195, 234, 235);
+  color: #00b69b;
+}
+
+.label-text-container .Work {
+  background: rgb(245, 229, 221);
+  color: #fd9a56;
+}
+
+.label-text-container .Social {
+  background: #dee8ff;
+  color: #5a8cff;
+}
+
+.label-text-container .Friends {
+  background: #f6ddff;
+  color: #d456fd;
+}
+
+.label-text-container .text {
+  width: 100%;
+  text-wrap: nowrap;
+  font-weight: 600;
+}
+table .time {
+  min-width: 65px;
+  text-wrap: nowrap;
+  color: #202224;
+  width: 95px;
+}
+.email-checkbox:checked {
+  background-color: #000;
+}
+.email-checkbox {
+  cursor: pointer;
+}
+
+.email-container .checked {
+  background-color: #f3f7ff;
+}
+tr:last-child td {
+  border: 0;
+}
+
+.icon-delete {
+  cursor: pointer;
+}

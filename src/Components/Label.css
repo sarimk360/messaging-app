@@ -1,0 +1,45 @@
+.label-heading {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.label-list-container .label-menu {
+  display: flex;
+  align-items: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+.label-icon {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1.2px solid;
+  cursor: pointer;
+  color: white;
+}
+.label-icon:not(:checked) {
+  background-color: white !important;
+}
+
+.label-title {
+  margin-left: 13px;
+}
+.create-label {
+  cursor: pointer;
+  padding: 16px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.add-icon {
+  color: rgb(164, 166, 166);
+}
+.create-label-text {
+  color: rgb(164, 166, 166);
+  margin-left: 20px;
+}

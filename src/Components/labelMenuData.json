@@ -1,0 +1,18 @@
+[
+  {
+    "icon": "#00B69B",
+    "name": "Primary"
+  },
+  {
+    "icon": "#5A8CFF",
+    "name": "Social"
+  },
+  {
+    "icon": "#FD9A56",
+    "name": "Work"
+  },
+  {
+    "icon": "#D456FD",
+    "name": "Friends"
+  }
+]
