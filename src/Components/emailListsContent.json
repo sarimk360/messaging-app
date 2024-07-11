@@ -153,12 +153,6 @@
     },
     "time": "7:52 PM",
     "delete": false,
-    "isArchived": false,
-    "messages":[{
-      "type":"sender",
-      "id":0,
-      "time":"2:30 PM",
-      "textMessage":"string"
-    }]
+    "isArchived": false
   }
 ]
