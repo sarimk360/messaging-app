@@ -102,6 +102,13 @@
   display: inline-block;
   cursor: pointer;
 }
+.rightMenu .icon-star-clicked {
+  background: url(../assets/star-clicked.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+}
 .check-box {
   width: 43px;
 }
@@ -184,4 +191,9 @@ tr:last-child td {
 
 .icon-delete {
   cursor: pointer;
+}
+.no-results-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

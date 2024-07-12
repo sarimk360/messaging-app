@@ -3,14 +3,17 @@ import "./Label.css";
 import labelMenuData from "./labelMenuData.json";
 
 const Label = () => {
-  const isActive = false;
   return (
     <>
       <div className="label-list-container">
         <div className="label-heading">Label</div>
         {labelMenuData.map((item, index) => {
           return (
-            <div key={index} className="label-menu">
+            <div
+              key={index}
+              className="label-menu"
+              onClick={() => handleLabelClick(item.name)}
+            >
               <input
                 type="checkbox"
                 className="label-icon"
