@@ -3,6 +3,7 @@
   border: 0.3px solid #b9b9b9;
   width: calc(100vw - 415px);
   overflow: hidden;
+  background-color: #fff;
 }
 .search-mail-container {
   height: 40px;
@@ -11,7 +12,7 @@
   background: #f5f6fa;
   border-radius: 50px;
 }
-.search--icon-div {
+.search-icon-div {
   height: 40px;
   display: flex;
   align-items: center;
@@ -84,6 +85,8 @@
   font-size: 14px;
   border-radius: 0px 10px 10px 0px;
   box-sizing: border-box;
+  height: 700px;
+  overflow-y: auto;
 }
 .email-container .icon-star-container {
   width: 47px;
@@ -117,16 +120,22 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+
 td {
   padding: 20px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #b9b9b9;
-  height: 66px;
+  cursor: pointer;
 }
+
 .label-text-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Ensure items start at the beginning */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  box-sizing: border-box; /* Ensure padding is included in the box model */
 }
+
 table .name {
   max-width: 150px;
   width: 150px;
@@ -135,9 +144,11 @@ table .name {
   white-space: nowrap;
   font-weight: bold;
 }
+
 .label-text-container .label {
+  flex-shrink: 0; /* Prevent shrinking */
   width: 60px;
-  padding: 3px 0px;
+  padding: 3px 0;
   font-size: 12px;
   font-weight: 600;
   text-align: center;
@@ -165,19 +176,25 @@ table .name {
 }
 
 .label-text-container .text {
-  width: 100%;
-  text-wrap: nowrap;
+  flex-grow: 1; /* Allow text to grow and fill space */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: 600;
+  padding: 3px 0;
 }
+
 table .time {
   min-width: 65px;
-  text-wrap: nowrap;
+  white-space: nowrap;
   color: #202224;
   width: 95px;
 }
+
 .email-checkbox:checked {
   background-color: #000;
 }
+
 .email-checkbox {
   cursor: pointer;
 }
@@ -185,6 +202,7 @@ table .time {
 .email-container .checked {
   background-color: #f3f7ff;
 }
+
 tr:last-child td {
   border: 0;
 }

@@ -1,19 +1,16 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./Label.css";
 import labelMenuData from "./labelMenuData.json";
 
-const Label = () => {
+const Label = ({ onLabelSelect }) => {
   return (
     <>
       <div className="label-list-container">
         <div className="label-heading">Label</div>
         {labelMenuData.map((item, index) => {
           return (
-            <div
-              key={index}
-              className="label-menu"
-              onClick={() => handleLabelClick(item.name)}
-            >
+            <div key={index} className="label-menu">
               <input
                 type="checkbox"
                 className="label-icon"
@@ -21,6 +18,7 @@ const Label = () => {
                   backgroundColor: item.icon,
                   borderColor: item.icon,
                 }}
+                onChange={() => onLabelSelect(item.name)}
               />
               <div className="label-title">{item.name}</div>
             </div>

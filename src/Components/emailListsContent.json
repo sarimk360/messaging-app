@@ -9,7 +9,39 @@
     },
     "time": "8:38 AM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -21,7 +53,24 @@
     },
     "time": "8:13 AM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -33,7 +82,24 @@
     },
     "time": "7:52 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -45,7 +111,24 @@
     },
     "time": "7:52 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -57,7 +140,24 @@
     },
     "time": "4:13 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -69,7 +169,24 @@
     },
     "time": "3:52 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -81,7 +198,24 @@
     },
     "time": "2:30 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -93,7 +227,24 @@
     },
     "time": "8:38 AM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -105,7 +256,24 @@
     },
     "time": "8:13 AM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -117,7 +285,24 @@
     },
     "time": "7:52 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -129,7 +314,24 @@
     },
     "time": "4:13 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   },
   {
     "isChecked": false,
@@ -141,6 +343,226 @@
     },
     "time": "7:52 PM",
     "delete": false,
-    "isArchived": false
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
+  },
+  {
+    "isChecked": false,
+    "isFav": false,
+    "name": "Minerva Barnett ",
+    "desc": {
+      "label": "Work",
+      "text": "Get Best Advertiser In Your Side Pocket"
+    },
+    "time": "8:13 AM",
+    "delete": false,
+    "isArchived": false,
+    "messages": [
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      },
+      {
+        "type": "receiver",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+        "time": "6.34 pm"
+      },
+      {
+        "type": "sender",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "time": "6.30 pm"
+      }
+    ]
   }
 ]
