@@ -93,12 +93,35 @@
   display: inline-block;
   cursor: pointer;
 }
+.master-container {
+  height: calc(100vh - 255px);
+  overflow-y: auto;
+}
+/* Scrollbar */
+.master-container::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Track */
+.master-container::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle */
+.master-container::-webkit-scrollbar-thumb {
+  background: #888; /* Handle color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle on hover */
+.master-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
+}
 .new-message-container .text-message-container {
   display: flex;
   flex-direction: column;
-  padding: 28px;
-  /* height: 50px;
-  overflow-y: auto; */
+  padding: 12px;
 }
 .text-message-container .image-text-container {
   display: flex;
@@ -119,10 +142,10 @@
 }
 .image-text-container .sender-text-container .text {
   font-size: 14px;
-  padding: 20px;
+  padding: 10px;
 }
 .sender-text-container .time-more-container {
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -147,7 +170,6 @@
 .text-message-container .receiver-alignment-div {
   display: flex;
   justify-content: end;
-  margin: 20px 0px;
 }
 .text-message-container .receiver-text-container {
   width: 592px;
@@ -157,7 +179,7 @@
 }
 .receiver-text-container .text {
   font-size: 14px;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
 }
 .receiver-text-container .time-more-container {
@@ -177,7 +199,7 @@
   cursor: pointer;
 }
 .new-message-container .send-message-main-container {
-  padding: 24px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   gap: 30px;

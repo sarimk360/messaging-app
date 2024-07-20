@@ -4,14 +4,17 @@ import "./DashboardLeft.css";
 import MyEmail from "./MyEmail";
 import Label from "./Label";
 
-const DashboardLeft = ({ onLabelSelect }) => {
-  
+const DashboardLeft = ({ onLabelSelect,onItemSelect }) => {
   return (
     <>
-      <div className="dashboard-left">
-        <button className="compose-btn">+ Compose</button>
-        <MyEmail />
-        <Label onLabelSelect={onLabelSelect}/>
+      <div className="dashboard-left-container">
+        <div className="dashboard-left">
+          <button className="compose-btn">+ Compose</button>
+          <div className="myEmail-label-container">
+            <MyEmail onItemSelect={onItemSelect}/>
+            <Label onLabelSelect={onLabelSelect} />
+          </div>
+        </div>
       </div>
     </>
   );

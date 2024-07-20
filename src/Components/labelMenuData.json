@@ -1,19 +1,11 @@
 [
   {
+    "id": 0,
     "icon": "#00B69B",
-    "name": "Primary"
+    "name": "Primary",
+    "isSelected": false
   },
-  {
-    "icon": "#5A8CFF",
-    "name": "Social"
-  },
-  {
-    "icon": "#FD9A56",
-    "name": "Work"
-  },
-  {
-    "icon": "#D456FD",
-    "name": "Friends"
-  }
+  { "id": 1, "icon": "#5A8CFF", "name": "Social", "isSelected": false },
+  { "id": 2, "icon": "#FD9A56", "name": "Work", "isSelected": false },
+  { "id": 3, "icon": "#D456FD", "name": "Friends", "isSelected": false }
 ]
-

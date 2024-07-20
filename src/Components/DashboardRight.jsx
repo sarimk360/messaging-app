@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import EmailLists from "./EmailLists";
 import MessageOpen from "./MessageOpen";
 
-const DashboardRight = ({ selectedLabel }) => {
+const DashboardRight = ({ selectedLabel, selectedItem }) => {
   const [selectedMessage, setSelectedMessage] = useState(null);
 
   const receiveMessage = (data) => {
@@ -17,6 +18,7 @@ const DashboardRight = ({ selectedLabel }) => {
     <>
       {!selectedMessage && (
         <EmailLists
+          selectedItem={selectedItem}
           selectedLabel={selectedLabel}
           sendDataToParent={receiveMessage}
         />
