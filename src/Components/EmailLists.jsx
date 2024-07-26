@@ -2,10 +2,18 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import "./EmailLists.css";
-// import emailListsContent from "./emailListsContent.json";
 import axios from "axios";
+import { useContext } from "react";
+import AppContext from "./Context";
 
-const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
+const EmailLists = ({
+  selectedItem,
+  selectedLabel,
+  sendDataToParent,
+  sendDeleteDataMessage,
+}) => {
+  const { emailData } = useContext(AppContext);
+
   const [state, setState] = useState({
     emailLists: [],
     searchQuery: "",
@@ -13,23 +21,19 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
     showStarredOnly: false,
     delete: [],
   });
+
   const [selectAll, setSelectAll] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/emails").then((response) => {
-      setState((prevState) => ({
-        ...prevState,
-        emailLists: response.data,
-        searchResults: response.data,
-        delete: response.data,
-      }));
-    });
-  }, []);
+    setState((prevState) => ({
+      ...prevState,
+      emailLists: emailData,
+      searchResults: emailData,
+      delete: emailData,
+    }));
+  }, [emailData]);
 
   useEffect(() => {
-    state.emailLists.forEach((item) => {
-      item.id = new Date();
-    });
     handleSearch();
   }, [state.searchQuery, state.showStarredOnly, state.emailLists]);
 
@@ -65,11 +69,27 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
     }
   };
 
+  useEffect(() => {
+    if (sendDeleteDataMessage) {
+      handleMessageDelete();
+    }
+  }, [sendDeleteDataMessage]); // Dependency array should include sendDeleteDataMessage
+
+  const handleMessageDelete = () => {
+    const updatedEmailLists = state.emailLists.filter((item) => !item.delete);
+    setState((prevState) => ({
+      ...prevState,
+      emailLists: updatedEmailLists,
+      searchResults: updatedEmailLists,
+    }));
+  };
+
   const handleDelete = () => {
-    const updatedEmailLists = state.emailLists.map((item) => ({
+    let updatedEmailLists = state.emailLists.map((item) => ({
       ...item,
       delete: item.isChecked,
     }));
+
     const newData = updatedEmailLists.filter((item) => !item.delete);
 
     setState((prevState) => ({

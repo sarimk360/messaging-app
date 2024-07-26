@@ -7,6 +7,9 @@ import "./MessageOpen.css";
 const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
   const [currentMessage, setCurrentMessage] = useState(receivedDataFromList);
   const [inputMessage, setInputMessage] = useState("");
+  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [editMode, setEditMode] = useState(false); // <-- New state for edit mode
+  const [editMessageIndex, setEditMessageIndex] = useState(null); // <-- New state for the index of the message being edited
 
   const backToEmailList = () => {
     sendDataToParent();
@@ -15,29 +18,58 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    // Scroll to the bottom of the messages container when messages change
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [currentMessage.messages, receivedDataFromList]);
 
   const sendMessage = () => {
     if (inputMessage.trim() === "") return;
 
-    const newMessage = {
-      type: "receiver",
-      text: inputMessage,
-      time: new Date()
-        .toLocaleTimeString([], {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: true,
-        })
-        .replace(":", ".")
-        .toLowerCase(),
-    };
-    setCurrentMessage((prevState) => ({
-      ...prevState,
-      messages: [...prevState.messages, newMessage],
-    }));
+    if (editMode) {
+      // Check if in edit mode
+      // Update the existing message
+      setCurrentMessage((prevState) => {
+        const updatedMessages = prevState.messages.map((msg, index) =>
+          index === editMessageIndex
+            ? {
+                ...msg,
+                time: new Date()
+                  .toLocaleTimeString([], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true,
+                  })
+                  .replace(":", ".")
+                  .toLowerCase(),
+                text: inputMessage,
+                edited: true,
+              } // Set the edited flag to true
+            : msg
+        );
+        return { ...prevState, messages: updatedMessages };
+      });
+      setEditMode(false); // Exit edit mode
+      setEditMessageIndex(null); // Reset the edit message index
+    } else {
+      // Add a new message
+      const newMessage = {
+        type: "receiver",
+        text: inputMessage,
+        time: new Date()
+          .toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: true,
+          })
+          .replace(":", ".")
+          .toLowerCase(),
+        edited: false, // New messages are not edited
+      };
+      setCurrentMessage((prevState) => ({
+        ...prevState,
+        messages: [...prevState.messages, newMessage],
+      }));
+    }
+
     setInputMessage("");
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -47,12 +79,46 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
       sendMessage();
     }
   };
+  const handleStarChange = () => {
+    setCurrentMessage((prevState) => ({
+      ...prevState,
+      isFav: !prevState.isFav, // Toggle the star status
+    }));
+  };
+
+  const handleOptions = (index) => {
+    setSelectedIndex(index);
+  };
+
+  const handleEditMessage = (index) => {
+    setInputMessage(currentMessage.messages[index].text); // Set the message text to the input
+    setEditMode(true); // Enter edit mode
+    setEditMessageIndex(index); // Set the index of the message being edited
+    setSelectedIndex(null); // Close options
+  };
+
+  const closeOptions = () => {
+    setSelectedIndex(null);
+    setEditMode(false); // Exit edit mode when options are closed
+    setEditMessageIndex(null); // Reset the edit message index
+  };
+
+  const handleDeleteMessage = (index) => {
+    setCurrentMessage((prevState) => ({
+      ...prevState,
+      messages: prevState.messages.filter((_, i) => i !== index),
+    }));
+    setSelectedIndex(null); // Close options
+  };
 
   return (
     <div className="new-message-container">
       <div className="back-rightMenu">
         <div className="back-name-label-container">
-          <span className="icon-back-button" onClick={backToEmailList}></span>
+          <span
+            className="icon-back-button"
+            onClick={() => backToEmailList()}
+          ></span>
           <div className="name">{currentMessage.name}</div>
           <div
             className={`${currentMessage.desc.label ? "label" : ""} ${
@@ -61,15 +127,17 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
           >
             {currentMessage.desc.label}
           </div>
+          <div className="item">
+            <span
+              onClick={() => handleStarChange(currentMessage)}
+              className={
+                currentMessage.isFav ? "icon-star-clicked" : "icon-star"
+              }
+            ></span>
+          </div>
         </div>
         <div className="rightMenu-icons">
-          <div className="item">
-            <span className="icon-print"></span>
-          </div>
-          <div className="item">
-            <span className="icon-star-clicked"></span>
-          </div>
-          <div className="item">
+          <div className="item" title="delete">
             <span className="icon-delete"></span>
           </div>
         </div>
@@ -83,14 +151,36 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
                   <div className="img"></div>
                   <div className="sender-text-container">
                     <div className="text">{item.text}</div>
-                    <div className="time-more-container">
-                      <div className="time">{item.time}</div>
-                      <div className="more-container">
-                        <div className="more"></div>
-                        <div className="more"></div>
-                        <div className="more"></div>
+
+                    {selectedIndex === index ? (
+                      <div className="moreOptions-dots-container">
+                        <div
+                          className="delete"
+                          onClick={() => handleDeleteMessage(index)}
+                        >
+                          Delete For Me
+                        </div>
+                        <div className="close-btn" onClick={closeOptions}>
+                          X
+                        </div>
                       </div>
-                    </div>
+                    ) : (
+                      <>
+                        <div className="time-more-container">
+                          <div className="time">{item.time}</div>
+
+                          <div
+                            className="more-container"
+                            onClick={() => handleOptions(index)}
+                            title="options"
+                          >
+                            <div className="more"></div>
+                            <div className="more"></div>
+                            <div className="more"></div>
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               )}
@@ -98,14 +188,45 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
                 <div className="receiver-alignment-div">
                   <div className="receiver-text-container">
                     <div className="text">{item.text}</div>
-                    <div className="time-more-container">
-                      <div className="time">{item.time}</div>
-                      <div className="more-container">
-                        <div className="more"></div>
-                        <div className="more"></div>
-                        <div className="more"></div>
+
+                    {selectedIndex === index ? (
+                      <div className="moreOptions-dots-container">
+                        <div
+                          className="edit"
+                          onClick={() => handleEditMessage(index)}
+                        >
+                          Edit
+                        </div>
+                        <div
+                          className="delete"
+                          onClick={() => handleDeleteMessage(index)}
+                        >
+                          Delete
+                        </div>
+                        <div className="close-btn" onClick={closeOptions}>
+                          X
+                        </div>
                       </div>
-                    </div>
+                    ) : (
+                      <>
+                        <div className="time-more-container">
+                          {item.edited && (
+                            <div className="edited">Text Message Edited</div>
+                          )}
+                          <div className="time">{item.time}</div>
+
+                          <div
+                            className="more-container"
+                            onClick={() => handleOptions(index)}
+                            title="options"
+                          >
+                            <div className="more"></div>
+                            <div className="more"></div>
+                            <div className="more"></div>
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               )}
@@ -127,7 +248,12 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
         <span className="icon-clip"></span>
         <span className="icon-add-image"></span>
         <button className="send-button-container" onClick={sendMessage}>
-          <div className="send-button-text">Send</div>
+          <div
+            className="send-button-text"
+            onClick={() => handleEventEdited(e)}
+          >
+            {editMode ? "Update" : "Send"}
+          </div>
           <span className="icon-send"></span>
         </button>
       </div>
