@@ -1,55 +1,31 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./MyEmail.css";
 // import emailMenuData from "./emailMenuData.json";
-import axios from "axios";
+import AppContext from "./Context";
 
 const MyEmail = ({ onItemSelect }) => {
+  const { emailData, folders } = useContext(AppContext);
+
   const [emailMenu, setEmailMenu] = useState([]);
-  const [folders, setFolders] = useState([]);
-  const [emails, setEmails] = useState([]);
 
-  // Fetch folder data
   useEffect(() => {
-    axios
-      .get("http://localhost:3000/folders")
-      .then((response) => {
-        setFolders(response.data);
-      })
-      .catch((error) => {
-        console.log("There was an error fetching the folder data", error);
+    if (folders.length > 0) {
+      const inboxCount = emailData.filter((email) => !email.delete).length;
+      const starredCount = emailData.filter((email) => email.isFav).length;
+      const binCount = emailData.filter((email) => email.delete).length;
+
+      const updatedFolders = folders.map((folder) => {
+        let count = 0;
+        if (folder.name === "Inbox") count = inboxCount;
+        else if (folder.name === "Starred") count = starredCount;
+        else if (folder.name === "Bin") count = binCount;
+        return { ...folder, count };
       });
-  }, []);
-
-  // Fetch email data
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/emails")
-      .then((response) => {
-        setEmails(response.data);
-      })
-      .catch((error) => {
-        console.log("Error fetching email data", error);
-      });
-  }, []); // Only fetch emails once
-
-  // Update folder counts when emails or folders change
-  useEffect(() => {
-    if (folders.length > 0 && emails.length > 0) {
-      const counts = {
-        Inbox: emails.filter((email) => !email.delete).length,
-        Starred: emails.filter((email) => email.isFav).length,
-        Bin: emails.filter((email) => email.delete).length,
-      };
-
-      const updatedFolders = folders.map((folder) => ({
-        ...folder,
-        count: counts[folder.name] || 0,
-      }));
 
       setEmailMenu(updatedFolders);
     }
-  }, [folders, emails]); // Add both `folders` and `emails` as dependencies
+  }, [folders, emailData]);
 
   const handleActive = (item) => {
     const newData = emailMenu.map((element) =>

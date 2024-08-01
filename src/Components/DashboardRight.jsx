@@ -1,42 +1,19 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import EmailLists from "./EmailLists";
 import MessageOpen from "./MessageOpen";
-import { AppProvider } from "./Context";
+import AppContext, { AppProvider } from "./Context";
 
 const DashboardRight = ({ selectedLabel, selectedItem }) => {
-  const [selectedMessage, setSelectedMessage] = useState(null);
-  const [flag, setFlag] = useState(false);
-
-
-  const receiveMessage = (data) => {
-    setSelectedMessage(data);
-    setFlag(true);
-  };
-  const closeMessageOpen = () => {
-    setFlag(false);
-    setSelectedMessage(null);
-  };
+  const { selectedMessage } = useContext(AppContext);
 
   return (
     <>
-      <AppProvider>
-        {!flag && (
-          <EmailLists
-            selectedItem={selectedItem}
-            selectedLabel={selectedLabel}
-            sendDataToParent={receiveMessage}
-            sendDeleteDataMessage={selectedMessage}
-          />
-        )}
-        {flag && (
-          <MessageOpen
-            sendDataToParent={closeMessageOpen}
-            receivedDataFromList={selectedMessage}
-          />
-        )}
-      </AppProvider>
+      {!selectedMessage && (
+        <EmailLists selectedItem={selectedItem} selectedLabel={selectedLabel} />
+      )}
+      {selectedMessage && <MessageOpen />}
     </>
   );
 };

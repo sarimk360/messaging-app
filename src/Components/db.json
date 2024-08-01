@@ -417,20 +417,6 @@
       "id": "db0d"
     },
     {
-      "icon": "icon-spam",
-      "name": "Spam",
-      "count": 14,
-      "isActive": false,
-      "id": "c0cf"
-    },
-    {
-      "icon": "icon-important",
-      "name": "Important",
-      "count": 18,
-      "isActive": false,
-      "id": "de95"
-    },
-    {
       "icon": "icon-bin",
       "name": "Bin",
       "count": 9,

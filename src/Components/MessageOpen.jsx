@@ -1,18 +1,32 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import "./MessageOpen.css";
+import AppContext from "./Context";
 
 const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
-  const [currentMessage, setCurrentMessage] = useState(receivedDataFromList);
+  const { emailData, selectedMessage, selectMessage, setUpdatedData } =
+    useContext(AppContext);
+  const [currentMessage, setCurrentMessage] = useState(selectedMessage);
   const [inputMessage, setInputMessage] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [editMode, setEditMode] = useState(false); // <-- New state for edit mode
   const [editMessageIndex, setEditMessageIndex] = useState(null); // <-- New state for the index of the message being edited
+  const [notification, setNotification] = useState("");
 
   const backToEmailList = () => {
-    sendDataToParent();
+    selectMessage(false);
+    const newEmailData = emailData.map((item) => {
+      if (item.id === selectedMessage.id) {
+        return {
+          ...item,
+          isFav: currentMessage.isFav,
+        };
+      }
+      return item;
+    });
+    setUpdatedData(newEmailData);
   };
 
   const messagesEndRef = useRef(null);
@@ -79,7 +93,15 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
       sendMessage();
     }
   };
-  const handleStarChange = () => {
+  const handleStarChange = (currentMessage) => {
+    const updatedEmailData = emailData.map((item) =>
+      item.id === currentMessage.id
+        ? { ...item, isFav: !item.isFav }
+        : item
+    );
+  
+    // Update the state with the new emailData
+    setUpdatedData(updatedEmailData);
     setCurrentMessage((prevState) => ({
       ...prevState,
       isFav: !prevState.isFav, // Toggle the star status
@@ -109,6 +131,10 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
       messages: prevState.messages.filter((_, i) => i !== index),
     }));
     setSelectedIndex(null); // Close options
+    setNotification("Message has been successfully deleted."); // Set the notification message
+    setTimeout(() => {
+      setNotification(""); // Clear the notification message after 3 seconds
+    }, 2000);
   };
 
   return (
@@ -127,6 +153,7 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
           >
             {currentMessage.desc.label}
           </div>
+
           <div className="item">
             <span
               onClick={() => handleStarChange(currentMessage)}
@@ -135,6 +162,11 @@ const MessageOpen = ({ sendDataToParent, receivedDataFromList }) => {
               }
             ></span>
           </div>
+          {notification && (
+            <div className="notification-container">
+              <div className="notification">{notification}</div>
+            </div>
+          )}
         </div>
         <div className="rightMenu-icons">
           <div className="item" title="delete">

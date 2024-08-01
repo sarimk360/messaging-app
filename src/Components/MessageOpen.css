@@ -4,7 +4,22 @@
   width: calc(100vw - 415px);
   overflow: hidden;
   background-color: #fff;
-  /* height: 760px; */
+  height: calc(100vh - 114px);
+}
+.notification-container{
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 180px;
+  /* width: calc(100vw - 421px); */
+}
+.notification {
+  background-color: #08875a;
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 8px;
 }
 .new-message-container .back-rightMenu {
   display: flex;
@@ -221,11 +236,11 @@
   cursor: pointer;
 }
 .new-message-container .send-message-main-container {
-  padding: 16px 24px;
+  padding: 8px 24px;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   align-items: center;
+  gap: 30px;
   border-top: 1px solid #e0e0e0;
 }
 .send-message-main-container .icon-audio {

@@ -44,6 +44,14 @@
   justify-content: space-between;
   padding: 24px 24px;
 }
+.delete-notification {
+  background-color: #08875a;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: 212px;
+}
 .search-rightMenu .rightMenu {
   display: flex;
   border: 0.6px solid #d5d5d5;
@@ -77,7 +85,7 @@
   align-items: center;
   justify-content: center;
 }
-.rightMenu .item .select-all-checkbox{
+.rightMenu .item .select-all-checkbox {
   cursor: pointer;
 }
 .search-rightMenu .rightMenu .item:last-child {
@@ -147,7 +155,7 @@ table {
 }
 
 td {
-  padding: 20px 15px;
+  padding: 20px 15px 18px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #b9b9b9;
   cursor: pointer;
