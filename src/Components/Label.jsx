@@ -1,38 +1,27 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Label.css";
 // import labelMenuData from "./labelMenuData.json";
 import axios from "axios";
+import AppContext from "./Context";
+// import AppContext from "./Context";
 
-const Label = ({ onLabelSelect }) => {
-  const [labelState, setLabelState] = useState([]);
-
-  useEffect(() => {
-    // Fetch labels from the JSON server
-    axios
-      .get("http://localhost:3000/labels")
-      .then((response) => {
-        setLabelState(response.data);
-      })
-      .catch((error) => {
-        console.error("There was an error fetching the labels!", error);
-      });
-  }, []);
+const Label = () => {
+  const { label, setLabelState, setUpdatedData } = useContext(AppContext);
 
   const selectingLabel = (data) => {
-    const newSelectedLabel = labelState.map((item) =>
+    const newSelectedLabel = label.map((item) =>
       data.id == item.id ? { ...item, isSelected: !item.isSelected } : item
     );
     setLabelState(newSelectedLabel);
-    onLabelSelect(newSelectedLabel);
   };
 
   return (
     <>
       <div className="label-list-container">
         <div className="label-heading">Label</div>
-        {labelState.map((item, index) => {
+        {label.map((item, index) => {
           return (
             <div key={index} className="label-menu">
               <input

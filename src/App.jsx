@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import DashboardLeft from "./Components/DashboardLeft";
 import DashboardRight from "./Components/DashboardRight";
+import { AppProvider } from "./Components/Context";
 
 function App() {
   const [selectedLabel, setSelectedLabel] = useState(null);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+      <AppProvider>
       <div className="inbox">Inbox</div>
       <div className="main-container">
         <DashboardLeft
@@ -27,6 +29,7 @@ function App() {
           selectedItem={selectedItem}
         />
       </div>
+      </AppProvider>
     </>
   );
 }

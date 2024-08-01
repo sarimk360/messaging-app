@@ -2,60 +2,71 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import "./EmailLists.css";
-// import emailListsContent from "./emailListsContent.json";
-import axios from "axios";
+import { useContext } from "react";
+import AppContext from "./Context";
 
-const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
+const EmailLists = ({ selectedItem }) => {
+  const { emailData, setUpdatedData, selectMessage, label } =
+    useContext(AppContext);
+
   const [state, setState] = useState({
     emailLists: [],
-    searchQuery: "",
     searchResults: [],
-    showStarredOnly: false,
     delete: [],
+    searchQuery: "",
+    selectedLabels: [],
   });
   const [selectAll, setSelectAll] = useState(false);
+  const [deleteNotification, setDeleteNotification] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:3000/emails").then((response) => {
-      setState((prevState) => ({
-        ...prevState,
-        emailLists: response.data,
-        searchResults: response.data,
-        delete: response.data,
-      }));
-    });
-  }, []);
-
-  useEffect(() => {
-    state.emailLists.forEach((item) => {
-      item.id = new Date();
-    });
-    handleSearch();
-  }, [state.searchQuery, state.showStarredOnly, state.emailLists]);
-
-  const handleCheckboxChange = (data) => {
-    const newData = state.emailLists.map((item) =>
-      item.id == data.id ? { ...item, isChecked: !item.isChecked } : item
-    );
-
     setState((prevState) => ({
       ...prevState,
-      searchResults: newData,
+      emailLists: emailData,
+      searchResults: emailData,
+      delete: emailData,
+    }));
+  }, [emailData]);
+
+  useEffect(() => {
+    handleSearch();
+  }, [state.searchQuery, state.emailLists]);
+
+  useEffect(() => {
+    if (selectedItem) {
+      selectedItemToggle();
+    }
+  }, [selectedItem, emailData]);
+
+  useEffect(() => {
+    if (label) {
+      selectedLabelToggle(label);
+    }
+  }, [label]);
+
+  const handleCheckboxChange = (data) => {
+    // General checkbox update
+
+    const newData = state.searchResults.map((item) =>
+      item.id === data.id ? { ...item, isChecked: !item.isChecked } : item
+    );
+
+    // Update the state
+    setState((prevState) => ({
+      ...prevState,
       emailLists: newData,
+      searchResults: newData,
     }));
   };
-
   const handleStarChange = (data) => {
-    const newData = state.emailLists.map((item, i) =>
-      item.id == data.id ? { ...item, isFav: !item.isFav } : item
+    const newData = state.emailLists.map((item) =>
+      item.id === data.id ? { ...item, isFav: !item.isFav } : item
     );
-    if (selectedItem?.name == "Starred") {
-      const newSearchData = newData.filter((item) => {
-        return item.isFav == true;
-      });
+    setUpdatedData(newData);
+    if (selectedItem?.name === "Starred") {
       setState((prevState) => ({
         ...prevState,
-        searchResults: newSearchData,
+        searchResults: newData.filter((item) => item.isFav),
       }));
     } else {
       setState((prevState) => ({
@@ -63,40 +74,52 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
         emailLists: newData,
       }));
     }
+    selectedItemToggle();
   };
 
   const handleDelete = () => {
-    const updatedEmailLists = state.emailLists.map((item) => ({
+    let updatedEmailLists = state.emailLists.map((item) => ({
       ...item,
       delete: item.isChecked,
     }));
-    const newData = updatedEmailLists.filter((item) => !item.delete);
+    // setUpdatedData(updatedEmailLists);
 
+    const deletedCount = updatedEmailLists.filter((item) => item.delete).length;
+    const newData = updatedEmailLists.filter((item) => !item.delete);
     setState((prevState) => ({
       ...prevState,
       emailLists: newData,
       searchResults: newData,
       delete: updatedEmailLists,
     }));
+
+    selectedItemToggle();
+    setSelectAll(false);
+    if (deletedCount > 0) {
+      setDeleteNotification(
+        deletedCount === 1
+          ? "1 Item successfully sent to Bin"
+          : `${deletedCount} Items successfully sent to Bin`
+      );
+      setTimeout(() => {
+        setDeleteNotification("");
+      }, 3000);
+    }
   };
 
   const handleSearch = () => {
     const query = state.searchQuery.toLowerCase().trim();
-
     if (!query) {
       setState((prevState) => ({
         ...prevState,
         searchResults: state.emailLists,
       }));
     } else {
-      const filteredEmails = state.emailLists.filter((item) => {
-        return (
-          item.desc.label.toLowerCase().includes(query) ||
-          item.name.toLowerCase().includes(query) ||
-          item.desc.text.toLowerCase().includes(query) ||
-          item.time.toLowerCase().includes(query)
-        );
-      });
+      const filteredEmails = state.emailLists.filter((item) =>
+        [item.desc.label, item.name, item.desc.text, item.time].some((field) =>
+          field.toLowerCase().includes(query)
+        )
+      );
       setState((prevState) => ({
         ...prevState,
         searchResults: filteredEmails,
@@ -111,86 +134,80 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
     }));
   };
 
-  const selectMessage = (item) => {
-    sendDataToParent(item);
-  };
-  const handleSelectAllChange = () => {
+  const handleSelectAllChange = (labels) => {
     const newSelectAllStatus = !selectAll;
     setSelectAll(newSelectAllStatus);
-    const newResults = state.emailLists.map((item) => ({
-      ...item,
-      isChecked: newSelectAllStatus,
+
+    const selectedLabels = labels
+      .filter((label) => label.isSelected)
+      .map((label) => label.name);
+
+    //filtering the elements that are already selected in the list and deleted
+
+    let newResults = selectedLabels
+      .filter((item) => !item.isChecked)
+      .map((item) => ({
+        ...item,
+        isChecked: newSelectAllStatus,
+      }));
+    setState((prevState) => ({
+      ...prevState,
+      emailLists: newResults,
+      searchResults: newResults,
     }));
-    setState({ ...state, emailLists: newResults });
   };
 
-  useEffect(() => {
-    if (selectedLabel && Array.isArray(selectedLabel)) {
-      selectedLabelToggle(selectedLabel);
-    }
-  }, [selectedLabel]);
+  const selectedLabelToggle = (labels) => {
+    // Get the names of selected labels
+    const selectedLabels = labels
+      .filter((label) => label.isSelected)
+      .map((label) => label.name);
 
-  const selectedLabelToggle = (selectedLabel) => {
-    if (!selectedLabel) {
+    // If no labels are selected, return the full email list
+    if (selectedLabels.length === 0) {
+      setState((prevState) => ({
+        ...prevState,
+        searchResults: state.emailLists,
+      }));
       return;
     }
-    let newData = [];
-    let flag = 0;
-    selectedLabel.forEach((element) => {
-      if (element.isSelected) {
-        flag = 1;
-      }
-      state.emailLists.forEach((item) => {
-        if (item.desc.label === element.name && element.isSelected) {
-          newData.push(item);
-        }
-      });
-    });
-    if (flag) {
+
+    // Filter the email list based on selected labels
+    const newData = state.emailLists.filter((item) =>
+      selectedLabels.includes(item.desc.label)
+    );
+
+    setState((prevState) => ({
+      ...prevState,
+      searchResults: newData,
+    }));
+  };
+
+  const selectedItemToggle = () => {
+    if (!selectedItem) return;
+    const { name } = selectedItem;
+    if (name === "Inbox") {
       setState((prevState) => ({
         ...prevState,
-        searchResults: newData,
+        searchResults: prevState.emailLists,
       }));
-    } else {
+    } else if (name === "Starred") {
       setState((prevState) => ({
         ...prevState,
-        searchResults: state.emailLists,
+        searchResults: prevState.emailLists.filter((item) => item.isFav),
+      }));
+    } else if (name === "Bin") {
+      setState((prevState) => ({
+        ...prevState,
+        searchResults: prevState.delete
+          .map((item) => ({ ...item, isChecked: false }))
+          .filter((item) => item.delete),
       }));
     }
   };
 
-  useEffect(() => {
-    if (selectedItem) {
-      selectedItemToggle(selectedItem);
-    }
-  }, [selectedItem]);
-
-  const selectedItemToggle = () => {
-    if (selectedItem.name == "Inbox") {
-      setState((prevState) => ({
-        ...prevState,
-        searchResults: state.emailLists,
-      }));
-    } else if (selectedItem.name == "Starred") {
-      const newData = state.emailLists.filter((item) => {
-        return item.isFav == true;
-      });
-      setState((prevState) => ({
-        ...prevState,
-        searchResults: newData,
-      }));
-    } else if (selectedItem.name === "Bin") {
-      const updatedEmailLists = state.delete.map((item) => ({
-        ...item,
-        isChecked: false,
-      }));
-      const newData = updatedEmailLists.filter((item) => item.delete === true);
-
-      setState((prevState) => ({
-        ...prevState,
-        searchResults: newData,
-      }));
-    }
+  const handleSelectMessage = (item) => {
+    selectMessage(item);
   };
 
   return (
@@ -209,6 +226,9 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
               value={state.searchQuery}
             />
           </div>
+          {deleteNotification && (
+            <div className="delete-notification">{deleteNotification}</div>
+          )}
           <div className="rightMenu">
             <div className="item">
               <input
@@ -261,12 +281,15 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
                         onClick={() => handleStarChange(item)}
                       ></span>
                     </td>
-                    <td className="name" onClick={() => selectMessage(item)}>
+                    <td
+                      className="name"
+                      onClick={() => handleSelectMessage(item)}
+                    >
                       {item.name}
                     </td>
                     <td
                       className="label-text-container"
-                      onClick={() => selectMessage(item)}
+                      onClick={() => handleSelectMessage(item)}
                     >
                       <div
                         className={`${item.desc.label ? "label" : ""} ${
@@ -278,7 +301,10 @@ const EmailLists = ({ selectedItem, selectedLabel, sendDataToParent }) => {
                       <div className="text">{item.desc.text}</div>
                     </td>
 
-                    <td className="time" onClick={() => selectMessage(item)}>
+                    <td
+                      className="time"
+                      onClick={() => handleSelectMessage(item)}
+                    >
                       {item.time}
                     </td>
                   </tr>

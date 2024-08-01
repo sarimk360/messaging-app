@@ -1,408 +1,427 @@
 {
-    "emails": [
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Jullu Jalal ",
-        "desc": {
-          "label": "Primary",
-          "text": "Our Bachelor of Commerce program is ACBSP-accredited."
+  "emails": [
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Jullu Jalal",
+      "desc": {
+        "label": "Primary",
+        "text": "Our Bachelor of Commerce program is ACBSP-accredited."
+      },
+      "time": "8:38 AM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
         },
-        "time": "8:38 AM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Minerva Barnett ",
-        "desc": {
-          "label": "Work",
-          "text": "Get Best Advertiser In Your Side Pocket"
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          "time": "6.34 pm"
         },
-        "time": "8:13 AM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Minerva Barnett",
+      "desc": {
+        "label": "Work",
+        "text": "Get Best Advertiser In Your Side Pocket"
       },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Peter Lewis",
-        "desc": {
-          "label": "Friends",
-          "text": "Vacation Home Rental Success"
+      "time": "8:13 AM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
         },
-        "time": "7:52 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Anthony Briggs",
-        "desc": {
-          "label": "",
-          "text": "Free Classifieds Using Them To Promote Your Stuff Online"
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          "time": "6.34 pm"
         },
-        "time": "7:52 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Peter Lewis",
+      "desc": {
+        "label": "Friends",
+        "text": "Vacation Home Rental Success"
       },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Clifford Morgan",
-        "desc": {
-          "label": "Social",
-          "text": "Enhance Your Brand Potential With Giant Advertising Blimps"
+      "time": "7:52 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
         },
-        "time": "4:13 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Cecilia Webster",
-        "desc": {
-          "label": "Friends",
-          "text": "Always Look On The Bright Side Of Life"
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+          "time": "6.34 pm"
         },
-        "time": "3:52 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "3"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Anthony Briggs",
+      "desc": {
+        "label": "",
+        "text": "Free Classifieds Using Them To Promote Your Stuff Online"
       },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Harvey Manning",
-        "desc": {
-          "label": "",
-          "text": "Curling Irons Are As Individual As The Women Who Use Them"
+      "time": "7:52 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
         },
-        "time": "2:30 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Willie Blake",
-        "desc": {
-          "label": "Primary",
-          "text": "Our Bachelor of Commerce program is ACBSP-accredited."
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
         },
-        "time": "8:38 AM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "7446"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Clifford Morgan",
+      "desc": {
+        "label": "Social",
+        "text": "Enhance Your Brand Potential With Giant Advertising Blimps"
       },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Minerva Barnett",
-        "desc": {
-          "label": "Work",
-          "text": "Get Best Advertiser In Your Side Pocket"
+      "time": "4:13 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
         },
-        "time": "8:13 AM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Fanny Weaver",
-        "desc": {
-          "label": "",
-          "text": "Free Classifieds Using Them To Promote Your Stuff Online"
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
         },
-        "time": "7:52 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "e85d"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Cecilia Webster",
+      "desc": {
+        "label": "Friends",
+        "text": "Always Look On The Bright Side Of Life"
       },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Olga Hogan",
-        "desc": {
-          "label": "Social",
-          "text": "Enhance Your Brand Potential With Giant Advertising Blimps"
+      "time": "3:52 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
         },
-        "time": "4:13 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      },
-      {
-        "isChecked": false,
-        "isFav": false,
-        "name": "Lora Houston",
-        "desc": {
-          "label": "Friends",
-          "text": "Vacation Home Rental Success"
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
         },
-        "time": "7:52 PM",
-        "delete": false,
-        "isArchived": false,
-        "messages": [
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          },
-          {
-            "type": "receiver",
-            "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-            "time": "6.34 pm"
-          },
-          {
-            "type": "sender",
-            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            "time": "6.30 pm"
-          }
-        ]
-      }
-    ],
-    "labels": [
-      {
-        "id": 0,
-        "icon": "#00B69B",
-        "name": "Primary",
-        "isSelected": false
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "71ba"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Harvey Manning",
+      "desc": {
+        "label": "",
+        "text": "Curling Irons Are As Individual As The Women Who Use Them"
       },
-      { "id": 1, "icon": "#5A8CFF", "name": "Social", "isSelected": false },
-      { "id": 2, "icon": "#FD9A56", "name": "Work", "isSelected": false },
-      { "id": 3, "icon": "#D456FD", "name": "Friends", "isSelected": false }
-    ],
-    "folders": [
-      {
-        "icon": "icon-inbox",
-        "name": "Inbox",
-        "count": 1253,
-        "isActive": true
+      "time": "2:30 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        },
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
+        },
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "df7a"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Willie Blake",
+      "desc": {
+        "label": "Primary",
+        "text": "Our Bachelor of Commerce program is ACBSP-accredited."
       },
-      {
-        "icon": "icon-star",
-        "name": "Starred",
-        "count": 245,
-        "isActive": false
+      "time": "8:38 AM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        },
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
+        },
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "6c23"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Minerva Barnett",
+      "desc": {
+        "label": "Work",
+        "text": "Get Best Advertiser In Your Side Pocket"
       },
-      {
-        "icon": "icon-sent",
-        "name": "Sent",
-        "count": 24532,
-        "isActive": false
+      "time": "8:13 AM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        },
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
+        },
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "46f4"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Fanny Weaver",
+      "desc": {
+        "label": "",
+        "text": "Free Classifieds Using Them To Promote Your Stuff Online"
       },
-      {
-        "icon": "icon-draft",
-        "name": "Draft",
-        "count": 9,
-        "isActive": false
+      "time": "7:52 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        },
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
+        },
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "7769"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Olga Hogan",
+      "desc": {
+        "label": "Social",
+        "text": "Enhance Your Brand Potential With Giant Advertising Blimps"
       },
-      {
-        "icon": "icon-spam",
-        "name": "Spam",
-        "count": 14,
-        "isActive": false
+      "time": "4:13 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        },
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
+        },
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "b0ad"
+    },
+    {
+      "isChecked": false,
+      "isFav": false,
+      "name": "Lora Houston",
+      "desc": {
+        "label": "Friends",
+        "text": "Vacation Home Rental Success"
       },
-      {
-        "icon": "icon-important",
-        "name": "Important",
-        "count": 18,
-        "isActive": false
-      },
-      {
-        "icon": "icon-bin",
-        "name": "Bin",
-        "count": 9,
-        "isActive": false
-      }
-    ]
-  }
-  
+      "time": "7:52 PM",
+      "delete": false,
+      "isArchived": false,
+      "messages": [
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        },
+        {
+          "type": "receiver",
+          "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+          "time": "6.34 pm"
+        },
+        {
+          "type": "sender",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+          "time": "6.30 pm"
+        }
+      ],
+      "id": "7988"
+    }
+  ],
+  "labels": [
+    {
+      "id": "0",
+      "icon": "#00B69B",
+      "name": "Primary",
+      "isSelected": false
+    },
+    {
+      "id": "1",
+      "icon": "#5A8CFF",
+      "name": "Social",
+      "isSelected": false
+    },
+    {
+      "id": "2",
+      "icon": "#FD9A56",
+      "name": "Work",
+      "isSelected": false
+    },
+    {
+      "id": "3",
+      "icon": "#D456FD",
+      "name": "Friends",
+      "isSelected": false
+    }
+  ],
+  "folders": [
+    {
+      "icon": "icon-inbox",
+      "name": "Inbox",
+      "count": 1253,
+      "isActive": true,
+      "id": "7138"
+    },
+    {
+      "icon": "icon-star",
+      "name": "Starred",
+      "count": 245,
+      "isActive": false,
+      "id": "baa4"
+    },
+    {
+      "icon": "icon-sent",
+      "name": "Sent",
+      "count": 24532,
+      "isActive": false,
+      "id": "029f"
+    },
+    {
+      "icon": "icon-draft",
+      "name": "Draft",
+      "count": 9,
+      "isActive": false,
+      "id": "db0d"
+    },
+    {
+      "icon": "icon-bin",
+      "name": "Bin",
+      "count": 9,
+      "isActive": false,
+      "id": "5d43"
+    }
+  ]
+}
